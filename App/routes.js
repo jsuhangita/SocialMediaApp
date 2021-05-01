@@ -12,17 +12,18 @@ export function stackScreen() {
     return(
         <Stack.Navigator
         >
-            {/*<Stack.Screen*/}
-            {/*    name="Home"*/}
-            {/*    component={HomePage}*/}
-            {/*/>*/}
             <Stack.Screen
                 name="Home"
+                component={HomePage}
+                options={{headerShown: false}}
+            />
+            <Stack.Screen
+                name="ProductDetail"
                 component={ProductDetailPage}
                 options={{
                     title: 'Detail Listing #80889',
                     headerShown: true,
-                    headerLeft:()=>(<Icon name={'arrow-left'} style={{padding:theme.PADDING}} size={20}/>),
+                    headerLeft:()=>(<Icon name={'arrow-left'} style={{padding:theme.PADDING}} size={20} />),
                     headerRight:()=>(<Icon name={'heart'} style={{padding:theme.PADDING}} size={20}/>),
                     headerStyle: {
                         backgroundColor: theme.WHITE,

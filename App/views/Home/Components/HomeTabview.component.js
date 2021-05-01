@@ -29,8 +29,7 @@ export default class HomeTabviewComponent extends Component {
         };
         this._onIndexChange = this._onIndexChange.bind(this);
         this._renderScene = this._renderScene.bind(this);
-        this._renderItem = this._renderItem.bind(this);
-        this._renderItemUpcoming = this._renderItemUpcoming.bind(this);
+        this._onPressItem = this._onPressItem.bind(this);
     }
 
     _onIndexChange(index) {
@@ -51,29 +50,18 @@ export default class HomeTabviewComponent extends Component {
         );
     }
 
-    _renderItem({ item }) {
-        return (
-            <ProductItemComponent/>
-        );
-    }
-
-    _renderItemUpcoming({ item }) {
-        return (
-            <ProductItemComponent/>
-        );
-    }
-
-    _keyExtractor(item, index) {
-        return String(index);
+    _onPressItem(){
+        const { navigation } = this.props;
+        navigation.navigate('ProductDetail');
     }
 
     _renderScene({ route }) {
         switch (route.key) {
             case 'listing':
-               return <ProductItemComponent/>
+               return <ProductItemComponent onPressItem={this._onPressItem}/>
 
             case 'favorite':
-                return <ProductItemComponent/>
+                return <ProductItemComponent onPressItem={this._onPressItem}/>
 
             default:
                 return null;

@@ -11,10 +11,13 @@ export default class HomePage extends Component {
     }
 
     render() {
+        const { navigation } = this.props;
         return (
             <SafeAreaView style={styles.container}>
                 <UserProfileComponent/>
-                <HomeTabviewComponent/>
+                <HomeTabviewComponent
+                    navigation={navigation}
+                />
             </SafeAreaView>
         )
     }

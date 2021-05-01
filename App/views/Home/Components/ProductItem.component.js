@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Image, Text} from "react-native";
+import {View, StyleSheet, Image, Text, TouchableOpacity} from "react-native";
 import productImage from '../../../assets/ProductImage.png';
 import {theme} from "../../../styles/core.style";
 import {Avatar} from "react-native-elements";
@@ -16,8 +16,10 @@ export default class ProductItemComponent extends Component {
     }
 
     render() {
+        const { onPressItem } = this.props;
         return (
             <View style={styles.productContainer}>
+                <TouchableOpacity onPress={onPressItem}>
                 <View style={styles.avatarContainer}>
                     <View style={styles.userContainer}>
                         <View style={styles.userInfo}>
@@ -108,6 +110,7 @@ export default class ProductItemComponent extends Component {
                         </Text>
                     </View>
                 </View>
+                </TouchableOpacity>
             </View>
         )
     }
