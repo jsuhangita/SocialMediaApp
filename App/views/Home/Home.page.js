@@ -5,7 +5,7 @@ import UserProfileComponent from "./Components/UserProfile.component";
 import HomeTabviewComponent from "./Components/HomeTabview.component";
 
 
-export default class HomeScreen extends Component {
+export default class HomePage extends Component {
     constructor(props) {
         super(props);
     }
@@ -26,6 +26,6 @@ const styles = StyleSheet.create({
     }
 })
 
-HomeScreen.propTypes = {};
+HomePage.propTypes = {};
 
-HomeScreen.defaultProps = {};
+HomePage.defaultProps = {};

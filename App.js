@@ -23,10 +23,8 @@ export default class App extends PureComponent {
         <NavigationContainer>
           <View style={styles.wrapper}>
             <View style={styles.container}>
-              <Stack.Navigator
-                  headerMode={'none'}
-              >
-                <Stack.Screen name="App" component={stackScreen}/>
+              <Stack.Navigator>
+                <Stack.Screen options={{headerShown: false}} name="App" component={stackScreen}/>
               </Stack.Navigator>
             </View>
           </View>
