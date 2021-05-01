@@ -63,11 +63,11 @@ export const FONT_WEIGHT_BOLD = {
   fontWeight: theme.FONT_WEIGHT_BOLD,
   ...Platform.select({
     ios: {
-      fontFamily: 'arial',
+      fontFamily: 'avenir',
       fontWeight: 'bold',
     },
     android: {
-      fontFamily: 'arial',
+      fontFamily: 'avenir',
       fontWeight: 'bold',
     },
   }),
@@ -77,10 +77,10 @@ export const FONT_WEIGHT_EXTRA_BOLD = {
   fontWeight: theme.FONT_WEIGHT_EXTRA_BOLD,
   ...Platform.select({
     ios: {
-      fontFamily: 'arial',
+      fontFamily: 'avenir',
     },
     android: {
-      fontFamily: 'arial',
+      fontFamily: 'avenir',
     },
   }),
 };

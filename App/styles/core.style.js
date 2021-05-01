@@ -16,9 +16,9 @@ const theme = {
   SEMI_LIGHT_BLACK: '#000000',
   YELLOW: '#fdbb11',
   ORANGE: '#fb5d01',
-  BLUE: '#0e77da',
+  BLUE: '#5497F1',
   RED: '#d43020',
-  GREY: '#999999',
+  GREY: '#838383',
   LIGHT_GREY: '#d8d8d8',
   DARK_GREY: '#909090',
   grey: '#ccc',
@@ -37,7 +37,7 @@ const theme = {
   starColor: '#00a6b8',
 
   // Named Color Variables
-  PRIMARY: '#66bfbf',
+  PRIMARY: '#BEAF87',
   PRIMARY_DARK:'#222831',
   PRIMARY_LIGHT: '#eaf6f6',
   LIGHT: '#eaf6f6',
@@ -60,7 +60,7 @@ const theme = {
   buttonTextColor: '#ffffff',
   disabledGrey: '#cac6c6',
   DISABLED_GREY: '#cac6c6',
-  FADE_GREY: 'rgb(245, 245, 245)',
+  FADE_GREY: '#F2F2F2',
   containerGrey: 'rgba(0,0,0, 0.09)',
   borderGrey: '#979797',
   cardGrey: 'rgba(201, 198, 198, 0.2)',
@@ -166,7 +166,7 @@ const FONT_WEIGHT_NORMAL = {
   fontWeight: theme.FONT_WEIGHT_LIGHT,
   ...Platform.select({
     ios: {
-      fontFamily: 'arial',
+      fontFamily: 'Avenir',
     },
     android: {
       fontFamily: 'arial',

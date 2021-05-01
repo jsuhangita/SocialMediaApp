@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import { StyleSheet} from "react-native";
 import {SafeAreaView} from "react-native-safe-area-context";
+import UserProfileComponent from "./Components/UserProfile.component";
+import HomeTabviewComponent from "./Components/HomeTabview.component";
 
 
 export default class HomeScreen extends Component {
@@ -11,7 +13,8 @@ export default class HomeScreen extends Component {
     render() {
         return (
             <SafeAreaView style={styles.container}>
-
+                <UserProfileComponent/>
+                <HomeTabviewComponent/>
             </SafeAreaView>
         )
     }
